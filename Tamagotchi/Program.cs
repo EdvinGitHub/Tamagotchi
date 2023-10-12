@@ -1,19 +1,23 @@
-﻿using Tamagorchi;
+﻿
 int hp = 1;
 string svar = "";
 
-while(hp > 0)
-{   
+Tamagorchi tama = new Tamagorchi();
+Console.WriteLine("what you´r tamagorchi´S name?");
 
+while (hp > 0)
+{
+    Console.WriteLine("what do you whant to do Teach, feed, play and ");
     svar = Console.ReadLine();
-    if(svar == "mata")
+    if (svar == "Feed")
     {
-   
-        mata sva = new mata();
-        sva.Mata();
-        Console.WriteLine(hunger);
-        Console.WriteLine(sva);
+
+        tama.Feed();
+
+        Console.WriteLine(tama);
     }
+    tama.Hunger();
+
 
 }
 

@@ -1,15 +1,21 @@
-namespace Tamagorchi;
-public class mata
-{
-    public int  hunger = 100 ;
 
-    public void Mata()
+public class Tamagorchi
+{
+
+    public int hunger = 100 ;
+
+    public void Feed()
     {   
-        hunger = 0 ;
+        hunger += 10 ;
         Console.WriteLine("asdasdasd");
     }
-}
-// public class hunger
-// {
+    public void Hunger()
+    {
+        hunger -=10;
+        if(hunger <=0)
+        {
+            
+        }
+    }
     
-// }
+}
