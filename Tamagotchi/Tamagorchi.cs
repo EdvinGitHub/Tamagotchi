@@ -1,9 +1,15 @@
 namespace Tamagorchi;
 public class mata
 {
-    string Hej = "dick";
+    public int  hunger = 100 ;
+
+    public void Mata()
+    {   
+        hunger = 0 ;
+        Console.WriteLine("asdasdasd");
+    }
 }
-public class hunger
-{
+// public class hunger
+// {
     
-}
+// }
