@@ -1,21 +1,44 @@
 
+using System.Runtime.CompilerServices;
+
 public class Tamagorchi
 {
+    private bool isAlive = true;
+    private int hunger;
 
-    public int hunger = 100 ;
+    private int boredom;
+    private List<string> words = new List<string>() {""};
+
+    public string name = "";
+    private Random generator;
 
     public void Feed()
     {   
         hunger += 10 ;
         Console.WriteLine("asdasdasd");
+    
     }
-    public void Hunger()
+
+    public void Hi()
     {
-        hunger -=10;
-        if(hunger <=0)
-        {
-            
-        }
+
+    }
+    public void PrintStats()
+    {
+        
+    }
+    public void Teach(string word)
+    {
+
+    }
+    public void Tick()
+    {
+
+    }
+    
+    public bool GetAlive()
+    {
+        return true;
     }
     
 }
