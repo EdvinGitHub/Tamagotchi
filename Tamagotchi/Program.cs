@@ -1,23 +1,25 @@
-﻿
-int hp = 1;
-string svar = "";
+﻿string svar = "";
 
 Tamagorchi tama = new Tamagorchi();
 Console.WriteLine("what you´re tamagorchi´S name?");
 
-while (hp > 0)
+while (tama.GetAlive() == true)
 {
-    Console.WriteLine("what do you whant to do teach, feed, play och jerk off");
+    Console.WriteLine("what do you whant to do teach, feed, play or jerk off");
+    tama.PrintStats();
     svar = Console.ReadLine();
-    if (svar == "Feed")
+    if(svar == "teach")
+    {
+        Console.WriteLine("What word do you want to teach it?");
+        tama.Teach(Console.ReadLine());
+    }
+    if (svar == "feed")
     {
 
         tama.Feed();
 
-        Console.WriteLine(tama);
     }
     // tama.Hunger();
-    tama.PrintStats();
     
     Console.Clear();
 }
