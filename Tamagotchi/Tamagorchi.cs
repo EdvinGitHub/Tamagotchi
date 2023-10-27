@@ -14,35 +14,44 @@ public class Tamagorchi
 
     public void Feed()
     {   
-        hunger -= 4;
-        
-    
+        hunger -= 3;
     }
-
+    public void ReduceBordom()
+    {
+        boredom -= 3;
+    }
     public void Hi()
     {
-        
+        Console.WriteLine(words[Random.Shared.Next(words.Count)]);
     }
     public void PrintStats()
     {
         Console.WriteLine(hunger);
         Console.WriteLine(boredom);
-        if(boredom <= 0 && hunger <= 0)
-        { isAlive = false;}
+        // if(boredom <= 0 && hunger <= 0)
+        // { isAlive = false;}
     }
     public void Teach(string word)
     {
         words.Add(word);
         Console.WriteLine("Now your tamagotchi knows these words:");
         Console.WriteLine(String.Join(", ", words));
-        Console.WriteLine("Press enter to continue");
-        Console.ReadLine();
-        boredom =-2;
+      
+        ReduceBordom();
        
     }
     public void Tick()
     {
-
+        hunger += 1;
+        boredom += 2;
+        if (hunger >= 10)
+        {
+            isAlive = false;
+        }
+        if (boredom >= 10)
+        {
+            isAlive = false;
+        }
     }
     
     public bool GetAlive()
