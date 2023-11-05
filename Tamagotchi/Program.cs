@@ -1,12 +1,15 @@
-﻿string svar = "";
+﻿using System.Diagnostics;
+
+string svar = "";
 int ba;
 
 Tamagorchi tama = new Tamagorchi();
 Console.WriteLine("what you´re tamagorchi´S name?");
+tama.name = Console.ReadLine(); 
 
 while (tama.GetAlive() == true)
 {
-    ba = Random.Shared.Next(2);
+   ba = Random.Shared.Next(2);
     if(ba == 0)
     {
         tama.Hi();
@@ -30,10 +33,14 @@ while (tama.GetAlive() == true)
         Console.WriteLine("wtf are you doing?"); 
        
     }
+    tama.Tick();
     // tama.Hunger();
     Console.WriteLine("press ENTER to continue");
+    Console.ReadLine();
     Console.Clear();
 }
-// while (tama.isalive == false)
-// {}
+if (tama.GetAlive() == false)
+{
+    Console.WriteLine("you lost");
+}
 

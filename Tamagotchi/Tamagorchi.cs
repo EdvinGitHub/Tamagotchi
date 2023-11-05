@@ -22,12 +22,16 @@ public class Tamagorchi
     }
     public void Hi()
     {
+        Console.WriteLine(name,"says"); 
         Console.WriteLine(words[Random.Shared.Next(words.Count)]);
     }
-    public void PrintStats()
+    public void PrintStats()    
     {
-        Console.WriteLine(hunger);
-        Console.WriteLine(boredom);
+        Console.WriteLine("hunger");
+        Console.WriteLine( hunger);
+        Console.WriteLine("boredom");
+        Console.WriteLine( boredom);
+        Console.WriteLine(isAlive);
         // if(boredom <= 0 && hunger <= 0)
         // { isAlive = false;}
     }
@@ -43,7 +47,9 @@ public class Tamagorchi
     public void Tick()
     {
         hunger += 1;
-        boredom += 2;
+        boredom += 1;
+        hunger += Random.Shared.Next(2);
+        boredom += Random.Shared.Next(2);
         if (hunger >= 10)
         {
             isAlive = false;
@@ -56,7 +62,7 @@ public class Tamagorchi
     
     public bool GetAlive()
     {
-        return true;
+        return isAlive;
     }
     
 }
