@@ -42,5 +42,6 @@ while (tama.GetAlive() == true)
 if (tama.GetAlive() == false)
 {
     Console.WriteLine("you lost");
+    Console.ReadLine();
 }
 
