@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GseVLw9NQZgmqqbBH/bvHtbefFYIBimVvGiQGwd/vaVJN245iNM8ygZPdzbsckMIKzHpEqeCYuBY5VTRa2NblQ==",
+  "dgSpecHash": "5Uta4+WzENgqrqSMAumOfE0FPWvW59d7QwRbpZepYcA8Mr4MyNrJiVQCEJoTmGeTDl5kQAefn8pY/Nn4TVOdjg==",
   "success": true,
   "projectFilePath": "C:\\Users\\edvin.arvesjo\\Desktop\\programering 2\\Tamagotchi\\Tamagotchi\\Tamagotchi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\edvin.arvesjo\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.24\\microsoft.netcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\edvin.arvesjo\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.24\\microsoft.windowsdesktop.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\edvin.arvesjo\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.24\\microsoft.aspnetcore.app.ref.6.0.24.nupkg.sha512",
+    "C:\\Users\\edvin.arvesjo\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.24\\microsoft.netcore.app.host.win-x64.6.0.24.nupkg.sha512"
+  ],
   "logs": []
 }
